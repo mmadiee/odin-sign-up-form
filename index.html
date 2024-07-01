@@ -1,13 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign-up Form</title>
-    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="form.css" />
     <script src="form.js" defer></script>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <div class="box">
+          <h1 class="title">The Oasis</h1>
+        </div>
+      </div>
+      <div class="right">
+        <h2>Welcome to The Oasis</h2>
+        <p>A place to relax.</p>
+
+        <div class="form-area">
+          <form action="" method="post">
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name" />
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name" />
+            <label for="user_email">Email Address:</label>
+            <input
+              type="email"
+              id="user_email"
+              name="email"
+              placeholder="you@example.com"
+            />
+            <label for="user_phone_number">Phone Number:</label>
+            <input
+              type="number"
+              id="user_phone_number"
+              name="user_phone_number"
+            />
+            <label for="user_password">Password:</label>
+            <input type="password" id="user_password" name="user_password" />
+            <label for="confirm_password">Confirm Password:</label>
+            <input
+              type="password"
+              id="confirm_password"
+              name="confirm_password"
+            />
+            <button type="submit">Create an Account</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
