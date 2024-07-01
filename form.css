@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: "Raleway", sans-serif;
+}
+.container {
+  display: flex;
+}
+
+.left {
+  width: 35%;
+  height: 100vh;
+  background-image: url(img/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.box {
+  margin-top: 100px;
+  width: 100%;
+  height: 200px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #e4ebf2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Libre Baskerville", sans-serif;
+}
+
+.title {
+  font-size: 2.5rem;
+}
+
+.right {
+  width: 65%;
+  height: 100vh;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.heading {
+  text-align: center;
+  color: #324001;
+  font-size: larger;
+}
+
+.form-container {
+  background: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-grid div {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-grid label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.form-grid input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.form-grid input:invalid {
+  border-color: red;
+}
+
+.form-grid input:focus {
+  border-color: #bbbf4e;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+  outline: none;
+}
+
+.form-grid button {
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #f25c05;
+  border: solid 1px #f25c05;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+  grid-column: span 2;
+}
+
+.form-grid button:hover {
+  background-color: #f25c05;
+  color: white;
+  transition-duration: 1s;
+}
